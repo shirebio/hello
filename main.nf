@@ -3,6 +3,7 @@ nextflow.enable.dsl=2
 
 process sayHello {
 	label 'ass=fat'
+	label k: 'value'
 	input: 
 		val x
 	output:
@@ -10,6 +11,8 @@ process sayHello {
 	script:
     	"""
 		echo '$x world!'
+		echo 'also hey'
+
 		"""
 }
 
