@@ -3,7 +3,7 @@ nextflow.enable.dsl=2
 
 process sayHello {
 	label 'ass=fat'
-	label farts:'stinky'
+	# label farts:'stinky'
 	input: 
 		val x
 	output:
