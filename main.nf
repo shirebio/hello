@@ -11,7 +11,7 @@ process sayHello {
     	"""
 		echo '$x world!'
 		echo 'also hey'
-		echo '$process.labels'
+		echo "$process.labels"
 
 		"""
 }
