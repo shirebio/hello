@@ -2,7 +2,7 @@
 nextflow.enable.dsl=2 
 
 process sayHello {
-	label 'ass=fat'
+	label ass: 'fat'
 	input: 
 		val x
 	output:
@@ -12,7 +12,6 @@ process sayHello {
 		echo '$x world!'
 		echo "$nextflow.version"
 		echo "$params"
-		echo "$NXF_ORG"
 		"""
 }
 
