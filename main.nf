@@ -10,14 +10,13 @@ process sayHello {
 	script:
     	"""
 		echo '$x world!'
-		echo 'also hey'
 		echo "$nextflow.version"
 		echo "$params"
-
-
+		echo "$NXF_ORG"
+		echo "$NXF_ENABLE_LABELS_PROPAGATION"
 		"""
 }
 
 workflow {
-	Channel.of('Bonjour', 'Ciao', 'Hello', 'Hola') | sayHello | view
+	Channel.of('Hello', 'Hola') | sayHello | view
 }
