@@ -13,7 +13,6 @@ process sayHello {
 		echo "$nextflow.version"
 		echo "$params"
 		echo "$NXF_ORG"
-		echo "$NXF_ENABLE_LABELS_PROPAGATION"
 		"""
 }
 
