@@ -11,7 +11,9 @@ process sayHello {
     	"""
 		echo '$x world!'
 		echo 'also hey'
-		echo "$labels"
+		echo "$nextflow.version"
+		echo "$params"
+
 
 		"""
 }
