@@ -10,8 +10,18 @@ process sayHello {
 	script:
     	"""
 		echo '$x world!'
-		echo "$nextflow.version"
-		echo "$params"
+		echo "nextflow.version --> $nextflow.version"
+		echo "params --> $params"
+		echo "workflow.userName --> $workflow.userName"
+		echo "workflow.configFiles --> $workflow.configFiles"
+		echo "workflow.commandLine --> $workflow.commandLine"
+		echo "workflow.repository --> $workflow.repository"
+		echo "workflow.commitId --> $workflow.commitId"
+		echo "workflow.revision --> $workflow.revision"
+		echo "workflow.profile --> $workflow.profile"
+		echo "workflow.runName --> $workflow.runName"
+		echo "workflow.sessionId --> $workflow.sessionId"
+		echo "workflow.profile --> $workflow.profile"
 		"""
 }
 
