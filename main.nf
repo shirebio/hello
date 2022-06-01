@@ -3,6 +3,7 @@ nextflow.enable.dsl=2
 
 process sayHello {
 	label 'ass=fat'
+	label frog: 'ribbit'
 	input: 
 		val x
 	output:
@@ -21,7 +22,6 @@ process sayHello {
 		echo "workflow.profile --> $workflow.profile"
 		echo "workflow.runName --> $workflow.runName"
 		echo "workflow.sessionId --> $workflow.sessionId"
-		echo "workflow.profile --> $workflow.profile"
 		"""
 }
 
