@@ -3,7 +3,6 @@ nextflow.enable.dsl=2
 
 process sayHello {
 	label 'ass=fat'
-	# label frog:'ribbit'
 	input: 
 		val x
 	output:
