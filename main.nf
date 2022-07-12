@@ -25,6 +25,8 @@ process sayHello {
     echo "process.queue --> $process.queue"
     echo "aws.batch.cliPath --> $aws.batch.cliPath"
     echo "process.labels --> $process.labels"
+    """
+}
 
 workflow {
 	Channel.of('Hello', 'Hola') | sayHello | view
