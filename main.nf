@@ -21,10 +21,6 @@ process sayHello {
 		echo "workflow.profile --> $workflow.profile"
 		echo "workflow.runName --> $workflow.runName"
 		echo "workflow.sessionId --> $workflow.sessionId"
-    echo "process.executor --> $executor"
-    echo "process.queue --> $queue"
-    # echo "aws.batch.cliPath --> $aws.batch.cliPath"
-    echo "process.labels --> $labels"
     """
 }
 
