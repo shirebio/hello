@@ -24,7 +24,7 @@ process sayHello {
     echo "process.executor --> $executor"
     echo "process.queue --> $queue"
     # echo "aws.batch.cliPath --> $aws.batch.cliPath"
-    # echo "process.labels --> $labels"
+    echo "process.labels --> $labels"
     """
 }
 
